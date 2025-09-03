@@ -33,7 +33,7 @@ class Server:
     HAS_SSL = str(env.get("HAS_SSL", "0").lower()) in ("1", "true", "t", "yes", "y")
     NO_PORT = str(env.get("NO_PORT", "0").lower()) in ("1", "true", "t", "yes", "y")
     FQDN = str(env.get("FQDN", BIND_ADDRESS))
-    URL = "https://strmn-59acbcc8f3aa.herokuapp.com/".format(
+    URL = "https://strmn-87364ec2130c.herokuapp.com/".format(
         "s" if HAS_SSL else "", FQDN, "" if NO_PORT else ":" + str(PORT)
     )
 
